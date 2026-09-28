@@ -23,7 +23,7 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="updated">Last Updated: September 10, 2026 · Effective Date: September 10, 2026</p>
+<p class="updated">Last Updated: September 28, 2026 · Effective Date: September 28, 2026</p>
 
 <p>This Privacy Policy explains how <strong>Car Play Connect: Auto &amp; Sync</strong> ("App," "we," "our," or "us"), developed and operated by <strong>ASLI BASARAN</strong>, accesses, uses, processes, and protects information when you use our iOS application.</p>
 
@@ -37,39 +37,55 @@
 <p>✓ We do not display advertisements and do not offer subscriptions.</p>
 <p>✓ We do not sell your personal information.</p>
 <p>✓ We do not use Apple's Identifier for Advertisers (IDFA) and do not track you across apps or websites owned by other companies.</p>
-<p>✓ Most data — your contacts, radio favorites, app preferences — stays on your device and is never uploaded.</p>
+<p>✓ Your contacts, saved places, favorites, history, and app preferences stay on your device and are never uploaded to us.</p>
+<p>✓ To provide maps, routes, search, and weather, your location and the places you search for are sent to Apple's services (MapKit and WeatherKit). We do not receive them.</p>
 <p>✓ If you connect Spotify, your login tokens are stored securely in your device's Keychain. We never see your Spotify password.</p>
-<p>✓ We use Google Analytics for Firebase and Firebase Crashlytics to understand anonymous usage patterns and fix crashes.</p>
+<p>✓ We use Google Analytics for Firebase and Firebase Crashlytics to understand pseudonymous usage patterns and fix crashes.</p>
 </div>
 
 <h2>1. Information the App May Access on Your Device</h2>
-<p>Certain features require access to information on your iPhone. In every case below, access occurs only when necessary for a feature you choose to use, and only after you grant the applicable iOS permission. This information stays on your device and is not uploaded to our servers unless explicitly stated otherwise elsewhere in this Policy.</p>
+<p>Certain features require access to information on your iPhone or iPad. In every case below, access occurs only when necessary for a feature you choose to use, and only after you grant the applicable iOS permission. We do not operate our own servers, so none of this information is uploaded to us. Where a feature needs an Apple service to work, the table says so.</p>
 
 <table>
 <tr><th>What</th><th>Why</th><th>When</th></tr>
 <tr>
   <td>Location</td>
-  <td>Show your position on the map, provide navigation and routing, find nearby places (gas stations, charging stations, parking, restaurants, pharmacies, and similar categories) via Apple Core Location and MapKit</td>
-  <td>Only while you actively use the map or navigation features, and only after you grant Location permission</td>
+  <td>Show your position on the map, calculate routes and travel times, give turn-by-turn directions, show your current speed, and find nearby places (gas stations, charging stations, parking, restaurants, pharmacies, and similar categories). To do this, your location is sent to Apple's MapKit service.</td>
+  <td>Only while the App is open and you use the Home, map, navigation, or speed screens, and only after you grant Location permission</td>
+</tr>
+<tr>
+  <td>Weather</td>
+  <td>Show current conditions and your city name. Your approximate location is sent to Apple WeatherKit and Apple's map service for this purpose.</td>
+  <td>While the Home or driving screens are open, and only after you grant Location permission</td>
+</tr>
+<tr>
+  <td>Search text</td>
+  <td>Addresses and place names you type, and the destinations you save, are sent to Apple's MapKit service to find matching places and their coordinates</td>
+  <td>Only when you search for a place or save a destination</td>
 </tr>
 <tr>
   <td>Contacts</td>
-  <td>Display contacts within the driving interface via Apple's Contacts framework, so you can call a contact from the dashboard</td>
+  <td>Show your contacts in the driving interface so you can call them, and show contact addresses as navigation destinations. When you choose a contact's address as a destination, that address text is sent to Apple's MapKit service to find its location.</td>
   <td>Only after you grant Contacts permission</td>
 </tr>
 <tr>
   <td>Calling functionality</td>
-  <td>Initiate calls from the driving interface using Apple-provided system functionality</td>
-  <td>Only when you tap to call a contact; the App does not record calls or access call audio</td>
+  <td>Start calls from the driving interface using the iOS phone system. The App keeps a list of calls you started from the App (contact name and number) on your device only. It does not record calls or access call audio, and it cannot answer calls.</td>
+  <td>Only when you tap to call</td>
+</tr>
+<tr>
+  <td>Saved places and history</td>
+  <td>Your quick destinations (label, address, coordinates), your last 15 searched places, favorite contacts, favorite radio stations, and followed podcasts</td>
+  <td>Stored locally on your device; never uploaded to us</td>
 </tr>
 <tr>
   <td>App preferences</td>
-  <td>Personalize your experience: distance units (km/mi), selected radio country, whether the screen stays on while driving, and your last-used music source</td>
+  <td>Personalize your experience: distance and temperature units, traffic side, selected radio country, map style, whether the screen stays on while driving, and your last-used music source</td>
   <td>Stored locally via iOS UserDefaults; updates whenever you change a setting</td>
 </tr>
 </table>
 
-<p>You can revoke Location or Contacts permission at any time in iOS Settings → Privacy &amp; Security → [Permission]. We do not intentionally send your precise GPS coordinates, contact names, or phone numbers to Google Analytics for Firebase.</p>
+<p>You can revoke Location or Contacts permission at any time in iOS Settings → Privacy &amp; Security → [Permission]. We do not intentionally send your precise GPS coordinates, addresses, contact names, or phone numbers to Google Analytics for Firebase. When you start navigation, Analytics records only a coarse trip-distance range (for example, "1–5 km"), not where you are going.</p>
 
 <h2>2. Music Playback</h2>
 
@@ -77,21 +93,26 @@
 <p>If you choose to connect your Spotify account, the App uses the Spotify App Remote SDK and Spotify Web API to control playback (play, pause, skip) and to display your recently played tracks and saved songs. Your Spotify authentication tokens are stored securely in your device's Keychain (encrypted, on-device) and are never transmitted to us. We do not intentionally send song titles, artist names, or your listening history to Google Analytics for Firebase. Your use of Spotify is also governed by <a href="https://www.spotify.com/legal/privacy-policy/">Spotify's Privacy Policy</a>.</p>
 
 <h3>Apple Music</h3>
-<p>Apple Music integration is planned for a future update and is not yet available in the App. This Privacy Policy will be updated with the relevant details before that feature becomes active.</p>
+<p>If you choose to connect Apple Music, the App uses Apple's MusicKit framework, with your permission, to show your library and recently played songs, search the Apple Music catalog, and play music. Playback requires an active Apple Music subscription. This information is provided by Apple and is not sent to us. Analytics records only whether connecting succeeded or why it failed (for example, permission denied or no subscription), never song titles or your listening history. Your use of Apple Music is governed by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>. You can remove the connection in the App's Settings. The Apple Music permission itself is managed in iOS Settings.</p>
 
 <h3>Radio</h3>
-<p>The App's radio feature uses the <a href="https://www.radio-browser.info/">Radio Browser</a> public, community-maintained API to list internet radio stations by country. When you select a station, the audio stream is delivered directly from the broadcaster — we do not operate our own streaming servers and do not track which stations you listen to. For your security, the App only lists stations that stream over HTTPS. Your favorite stations are stored only on your device.</p>
+<p>The App's radio feature uses the <a href="https://www.radio-browser.info/">Radio Browser</a> public, community-maintained API to list internet radio stations by the country you choose. When you select a station, the audio stream is delivered directly from the broadcaster, which receives your IP address like any other internet request. We do not operate our own streaming servers and do not track which stations you listen to. Some stations stream only over unencrypted HTTP. In that case the audio is delivered without encryption. Your favorite stations are stored only on your device.</p>
+
+<h3>Podcasts</h3>
+<p>To find podcasts, the App uses Apple's public iTunes Search API. Your search terms and your device's region are sent to Apple to return matching shows and popular shows in your region. When you open a show, the App downloads that show's public RSS feed directly from its publisher. Episode audio is streamed directly from the publisher or its hosting provider, some of which use unencrypted HTTP. These publishers receive your IP address as with any internet request. The shows you follow are stored only on your device. We do not track which episodes you listen to.</p>
 
 <h2>3. Information Collected Through Analytics</h2>
 <p>We use <strong>Google Analytics for Firebase</strong> and <strong>Firebase Crashlytics</strong>, both provided by Google LLC, to understand general App usage and to detect and fix crashes.</p>
 
-<p>Analytics may process information such as: app opens and sessions, screens or features viewed, general feature interactions, session duration, app version, operating-system information, device model, language, approximate regional information, an automatically generated app-instance identifier, and Apple's Identifier for Vendor (IDFV) where applicable.</p>
+<p>Analytics may process information such as: app opens and sessions, screens or features viewed, general feature interactions, session duration, app version, operating-system information, device model, language, approximate regional information (derived by Google from your IP address), an automatically generated app-instance identifier, and Apple's Identifier for Vendor (IDFV) where applicable.</p>
+
+<p>The events the App itself records are limited to: which introduction screens were viewed and whether the location prompt was answered; which tabs were selected; that navigation started, with a coarse trip-distance range and whether alternative routes were available; and whether connecting Spotify or Apple Music succeeded, with a fixed error category if it failed.</p>
 
 <p>Crashlytics may process: stack traces, device model, iOS version, and app version at the time of a crash.</p>
 
 <p>We do not intentionally send the following to Google Analytics for Firebase or Crashlytics: your name, email address, phone number, address book contents, precise GPS coordinates, Spotify listening history, or call contents.</p>
 
-<p>This processing is anonymous and is not linked to your identity. Where applicable law (such as GDPR) requires a legal basis for this processing, we rely on <strong>legitimate interest</strong> — understanding aggregate usage and fixing crashes to keep the App reliable — rather than data that identifies you individually. The App does not currently offer an in-app control to disable Analytics; you may still limit data collection generally through your iOS device settings (e.g., disabling "Share iPhone Analytics" in Settings → Privacy &amp; Security → Analytics &amp; Improvements).</p>
+<p>This data is pseudonymous: it is associated with a random app-instance identifier, not with your name, email address, or phone number. Where applicable law (such as GDPR) requires a legal basis for this processing, we rely on <strong>legitimate interest</strong> — understanding aggregate usage and fixing crashes to keep the App reliable — rather than data that identifies you individually. The App does not currently offer an in-app control to disable Analytics; you may still limit data collection generally through your iOS device settings (e.g., disabling "Share iPhone Analytics" in Settings → Privacy &amp; Security → Analytics &amp; Improvements).</p>
 
 <h2>4. Identifiers</h2>
 
@@ -110,11 +131,15 @@
 <h2>6. Third-Party Services</h2>
 <table>
 <tr><th>Service</th><th>Provider</th><th>Purpose</th><th>Privacy Policy</th></tr>
-<tr><td>Core Location &amp; MapKit</td><td>Apple Inc.</td><td>Maps, navigation, nearby places</td><td><a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></td></tr>
-<tr><td>Contacts framework</td><td>Apple Inc.</td><td>In-app dialer contact list</td><td><a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></td></tr>
+<tr><td>Core Location &amp; MapKit</td><td>Apple Inc.</td><td>Maps, routes, place search, address lookup, nearby places</td><td><a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></td></tr>
+<tr><td>WeatherKit</td><td>Apple Inc.</td><td>Current weather for your location</td><td><a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></td></tr>
+<tr><td>Contacts framework</td><td>Apple Inc.</td><td>In-app dialer contact list and contact addresses</td><td><a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></td></tr>
+<tr><td>MusicKit (Apple Music)</td><td>Apple Inc.</td><td>Apple Music library and playback (only if you connect)</td><td><a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></td></tr>
+<tr><td>iTunes Search API</td><td>Apple Inc.</td><td>Podcast search and popular shows</td><td><a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></td></tr>
 <tr><td>Spotify App Remote SDK &amp; Web API</td><td>Spotify AB</td><td>Music playback (only if you connect)</td><td><a href="https://www.spotify.com/legal/privacy-policy/">spotify.com/legal/privacy-policy</a></td></tr>
 <tr><td>Radio Browser API</td><td>Radio Browser (community project)</td><td>Internet radio station listings</td><td><a href="https://www.radio-browser.info/">radio-browser.info</a></td></tr>
-<tr><td>Google Analytics for Firebase</td><td>Google LLC</td><td>Anonymous usage analytics</td><td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td></tr>
+<tr><td>Radio stations and podcast publishers</td><td>Independent broadcasters and hosts</td><td>Deliver the audio streams, feeds, and artwork you choose</td><td>Each provider's own policy</td></tr>
+<tr><td>Google Analytics for Firebase</td><td>Google LLC</td><td>Pseudonymous usage analytics</td><td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td></tr>
 <tr><td>Firebase Crashlytics</td><td>Google LLC</td><td>Crash reporting</td><td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td></tr>
 </table>
 <p>We do not sell, rent, or share your data with advertising networks or data brokers.</p>
@@ -130,32 +155,33 @@
 <p>Information described in this Policy is used to: provide the functionality you request (maps, navigation, contacts, calling, music playback, radio); remember your preferences; understand general App usage; identify and fix technical issues; maintain reliability; and comply with applicable legal obligations. We do not use information collected through the App for targeted advertising.</p>
 
 <h2>10. How Information Is Shared</h2>
-<p>We do not sell personal information. Information may be processed by service providers who perform functions necessary for the App (Google, Apple, Spotify, Radio Browser), each governed by their own terms. We may disclose information where reasonably necessary to comply with applicable law, respond to valid legal process, or protect our legal rights. If the App or its associated business is involved in a merger, acquisition, or sale of assets, information may be transferred as part of that transaction, subject to applicable privacy protections.</p>
+<p>We do not sell personal information. Information may be processed by service providers who perform functions necessary for the App (Google, Apple, Spotify, Radio Browser), each governed by their own terms. Radio stations and podcast publishers receive your IP address when they deliver the audio you choose. We may disclose information where reasonably necessary to comply with applicable law, respond to valid legal process, or protect our legal rights. If the App or its associated business is involved in a merger, acquisition, or sale of assets, information may be transferred as part of that transaction, subject to applicable privacy protections.</p>
 
 <h2>11. Data Retention</h2>
 <ul>
-<li><strong>On-device data</strong> (favorites, preferences, Spotify tokens): stays until you delete it or uninstall the App.</li>
+<li><strong>On-device data</strong> (saved places, history, favorites, preferences): stays until you delete it or uninstall the App.</li>
+<li><strong>Spotify tokens</strong> are stored in the iOS Keychain, which iOS may keep even after the App is deleted. To remove them, tap Disconnect next to Spotify in the App's Settings before uninstalling.</li>
 <li><strong>Firebase Analytics events:</strong> retained by Google for up to 14 months, then automatically deleted.</li>
 <li><strong>Firebase Crashlytics reports:</strong> retained by Google for up to 90 days.</li>
 </ul>
 
 <h2>12. Security</h2>
-<p>All network traffic uses HTTPS (radio stations using insecure HTTP streams are filtered out and not offered for playback). Spotify authentication tokens are stored in iOS Keychain (encrypted, hardware-backed). We do not operate our own servers, so no personal data is stored on infrastructure we control. iOS application sandboxing and permission controls provide additional protection. No method of electronic storage or transmission is completely secure, but we follow industry best practices.</p>
+<p>The App's requests to service APIs (Apple, Google, Spotify, Radio Browser, and podcast feeds) use HTTPS. Some radio stations and podcast audio files are only available over unencrypted HTTP; that audio is played directly from the broadcaster or publisher. Spotify authentication tokens are stored in iOS Keychain (encrypted, hardware-backed). We do not operate our own servers, so no personal data is stored on infrastructure we control. iOS application sandboxing and permission controls provide additional protection. No method of electronic storage or transmission is completely secure, but we follow industry best practices.</p>
 
 <h2>13. Your Choices and Controls</h2>
-<p>You may: deny any iOS permission when requested; revoke Location or Contacts permission at any time; disconnect your Spotify account from within the App; limit device-level analytics sharing through iOS Settings → Privacy &amp; Security → Analytics &amp; Improvements; and uninstall the App to remove all locally stored data. Some features may not function if a required permission is denied.</p>
+<p>You may: deny any iOS permission when requested; revoke Location, Contacts, or Apple Music permission at any time; disconnect Spotify or Apple Music from within the App; limit device-level analytics sharing through iOS Settings → Privacy &amp; Security → Analytics &amp; Improvements; and uninstall the App to remove locally stored data (disconnect Spotify first to also remove its Keychain tokens). Some features may not function if a required permission is denied.</p>
 
 <h2>14. Your Privacy Rights</h2>
 <p>Depending on where you live, applicable privacy law may give you rights to access, correct, delete, restrict, or object to processing of your personal information, and to lodge a complaint with a data-protection authority. Because the App does not require an account, we may have limited ability to identify information associated specifically with you; where necessary, we may request limited information to verify a privacy request. Contact: <a href="mailto:carplayconnect.support@gmail.com">carplayconnect.support@gmail.com</a>. We aim to respond within 30 days.</p>
 
 <h3>European Economic Area &amp; United Kingdom (GDPR / UK GDPR)</h3>
-<p>Where GDPR or UK GDPR applies, our legal bases for processing are: <strong>legitimate interest</strong> (anonymous analytics and crash reporting to maintain and improve the App) and <strong>your consent</strong> (connecting your Spotify account). You may lodge a complaint with your local data-protection supervisory authority.</p>
+<p>Where GDPR or UK GDPR applies, our legal bases for processing are: <strong>legitimate interest</strong> (pseudonymous analytics and crash reporting to maintain and improve the App) and <strong>your consent</strong> (connecting your Spotify account). You may lodge a complaint with your local data-protection supervisory authority.</p>
 
 <h3>California (CCPA / CPRA)</h3>
 <p>We do not sell personal information and do not share it for cross-context behavioral advertising. You may have rights to know, delete, correct, and opt out of certain processing under applicable California law.</p>
 
 <h3>Türkiye (KVKK)</h3>
-<p>We process minimal, anonymous data on the basis of legitimate interest to operate and improve the App. No personal data is transferred to third parties beyond what is described in this Policy.</p>
+<p>We process minimal, pseudonymous data on the basis of legitimate interest to operate and improve the App. No personal data is transferred to third parties beyond what is described in this Policy.</p>
 
 <h2>15. International Data Transfers</h2>
 <p>Our third-party service providers (Google, Apple, Spotify) operate internationally, and information may be processed in countries other than your own, including the United States. Where required by applicable law, these providers rely on Standard Contractual Clauses or equivalent safeguards.</p>
